@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cozy-sleep",
+	"version": "${version}",
+	"name": "Cozy Sleep",
+	"description": "Makes sleeping a little bit more realistic!",
+	"authors": [
+		"The_Rickosaur"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cozy-sleep/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.therickosaur.cozysleep.CozySleepMod"
+		],
+		"client": [
+			"net.therickosaur.cozysleep.CozySleepModClient"
+		],
+		"fabric-datagen": [
+			"net.therickosaur.cozysleep.CozySleepModDataGenerator"
+		]
+	},
+	"mixins": [
+		"cozy-sleep.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
